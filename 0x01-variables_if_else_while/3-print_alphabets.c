@@ -13,7 +13,7 @@ char CH = 'A';
 /*print a - z*/
 while (ch <= 'z')
 {
-putchar(ch)
+putchar(ch);
 ch++;
 }
 /*print A - Z*/
