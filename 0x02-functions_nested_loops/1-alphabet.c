@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * print_alphabet - utilizes on the _putchar funcation to print
- * the alphabet a - z
- *
- */
+*print_alphabet_x10 - function that will print alphabet 10 times
+*
+*/
 
 void print_alphabet_x10(void)
 {
-int ch;
+char ch;
 
 for (ch = 'a' ; ch <= 'z' ; ch++)
 {
