@@ -1,10 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
-/**
-* print_alphabet - utilizes on the _putchar funcation to print
-*          the alphabet a - z
-*/
+void print_alphabet_x10(void);
+
+int main(void)
+{
+print_alphabet_x10();
+return (0);
+}
 
 void print_alphabet_x10(void)
 {
@@ -16,4 +18,3 @@ _putchar('\n');
 
 return;
 }
-
