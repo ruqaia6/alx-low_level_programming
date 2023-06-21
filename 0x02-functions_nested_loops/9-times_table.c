@@ -2,21 +2,38 @@
 
 /**
  * times_table - Prints the 9 times table
+ *
+ * Example table
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
+ *
  */
+
 void times_table(void)
 {
-int i, j;
 
-for (i = 0; i <= 9; i++)
+int num, mult, prod;
+
+for (num = 0; num <= 9; num++)
 {
-for (j = 0; j <= 9; j++)
+
+_puchar(48);
+for (mult = 1; mult <= 9; mult++)
 {
-if (i * j < 10)
-printf("%d", i * j);
-else if (i * j >=10)
-printf(", %d", i * j);
-if (j !=9)
-printf(", ");
+_puchar('.');
+_puchar(' ');
+
+prod = num * mult;
+
+/*
+ * put space if product is a single number
+ * place the firist digit if its two numbers
+*/
+if (prod <= 9)
+_putchar(' ');
+else
+_putchar ((prod / 10) + 48); /*get the first digit*/
+_putchar ((prod % 10) + 48); /*get the second digit*/
 }
 _putchar('\n');
 }
