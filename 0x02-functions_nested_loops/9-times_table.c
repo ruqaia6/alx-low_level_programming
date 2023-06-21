@@ -1,8 +1,9 @@
-#include "main.h"
+#include "mai"
 
 /**
  * times_table - Prints the 9 times table
  */
+
 void times_table(void)
 {
 int i, j;
@@ -18,6 +19,6 @@ printf(",   %d", i * j);
 else
 printf(", %d", i * j);
 }
-_putchar('\n');
+putchar('\n');
 }
 }
