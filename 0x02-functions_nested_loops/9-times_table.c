@@ -18,6 +18,6 @@ printf(",   %d", i * j);
 else
 printf(", %d", i * j);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
