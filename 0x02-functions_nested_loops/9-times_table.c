@@ -17,11 +17,11 @@ int num, mult, prod;
 for (num = 0; num <= 9; num++)
 {
 
-_puchar(48);
+_putchar(48);
 for (mult = 1; mult <= 9; mult++)
 {
-_puchar('.');
-_puchar(' ');
+_putchar('.');
+_putchar(' ');
 
 prod = num * mult;
 
