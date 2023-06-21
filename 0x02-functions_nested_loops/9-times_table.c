@@ -1,4 +1,4 @@
-#include "mai"
+#include "main.h"
 
 /**
  * times_table - Prints the 9 times table
@@ -19,6 +19,6 @@ printf(",   %d", i * j);
 else
 printf(", %d", i * j);
 }
-putchar('\n');
+_putchar('\n');
 }
 }
