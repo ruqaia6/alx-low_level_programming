@@ -1,19 +1,22 @@
 #include "main.h" 
 
 /** 
- * _puts - prints a string, followed by a newline to stdout 
+ * _puts2 - prints every character of a string
  * 
  * @str: string parameter to print 
  * 
  * Return: Nothing 
  */ 
 
-void _puts(char *str) 
+void _puts2(char *str) 
 { 
-	while (*str != '\0') 
+	int i;
+
+	for (i = 0; str[i] != '\0'; ++i) 
 	{ 
-		_putchar(*str + 0); 
-		str++; 
+		if (i % 2 == 0)
+			_putchar(str[i]); 
+
 	} 
 	_putchar('\n'); 
 }
