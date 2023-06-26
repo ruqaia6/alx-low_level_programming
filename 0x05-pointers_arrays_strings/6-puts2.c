@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include "main.h" 
+#include <stdio.h> 
 
 /** 
- * _puts2 - prints every character of a string
+ * puts2 - prints every character of a string
  * 
  * @str: string parameter to print 
  * 
