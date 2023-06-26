@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include "main.h" 
 
 /** 
  * puts2 - prints every character of a string
@@ -8,7 +8,7 @@
  * Return: Nothing 
  */ 
 
-void _puts2(char *str) 
+void puts2(char *str) 
 { 
 	int i;
 
