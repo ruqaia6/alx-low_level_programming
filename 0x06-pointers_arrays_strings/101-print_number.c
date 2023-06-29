@@ -8,19 +8,20 @@
 
 void print_number(int n) 
 { 
-	unsigned int num = n; 
+	unsigned int n1 = n; 
 
-	/*first check if its negative*/ 
+
 	if (n < 0) 
 	{ 
 		_putchar('-'); 
-		num = -num; 
+		n1 = -n; 
 	} 
 
-	/*print the first few digits*/ 
-	if ((num / 10) > 0) 
-		print_number(num / 10); 
 
-	/*print the last digit*/ 
-	_putchar((num % 10) + 48); 
+	if (n1 / 10 != 0)
+	{	
+		print_number(n1 / 10); 
+	}
+
+	_putchar((n1 % 10) + '0'); 
 }
