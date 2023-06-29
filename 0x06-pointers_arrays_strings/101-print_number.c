@@ -7,23 +7,26 @@
  *
  * Return: 0
  */ 
+void print_number(int n)
+{
+	int i = 1;
+	int j = 1;
 
-void print_number(int n) 
-{ 
-	unsigned int n1 = n; 
-
-
-	if (n < 0) 
-	{ 
-		_putchar('-'); 
-		n1 = -n; 
-	} 
-
-
-	if (n1 / 10 != 0)
-	{	
-		print_number(n1 / 10); 
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
 	}
 
-	_putchar((n1 % 10) + '0'); 
+	while (n / i >= 10)
+	{
+		i *= 10;
+	}
+
+	while (i > 0)
+	{
+		_putchar((n / i) % 10 + '0');
+		i /= 10;
+	}
 }
+
