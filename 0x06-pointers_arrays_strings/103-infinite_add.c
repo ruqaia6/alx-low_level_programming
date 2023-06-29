@@ -22,9 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		int sum = digit1 + digit2 + carry;
 
 		if (k >= size_r - 1)
-		{
 			return (0);
-		}
 
 		r[k++] = sum % 10 + '0';
 		carry = sum / 10;
@@ -46,11 +44,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 
 	if (k >= size_r)
-	{
 		return (0);
-	}
 
 	r[k] = '\0';
-
 	return (r);
 }
