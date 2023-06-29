@@ -1,9 +1,11 @@
 #include "main.h" 
 
 /** 
- * print_number - Prints an integer. 
+ * print_number - Print number char 
  * 
- * @n: The integer to be printed. 
+ * @n: integer perams
+ *
+ * Return: 0
  */ 
 
 void print_number(int n) 
