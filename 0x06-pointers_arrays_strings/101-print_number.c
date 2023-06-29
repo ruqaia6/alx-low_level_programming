@@ -1,16 +1,16 @@
 #include "main.h" 
 
 /** 
- * print_number - Print number char 
+ * print_number - Print numbers chars 
  * 
- * @n: integer perams
+ * @n: integer params
  *
  * Return: 0
  */ 
+
 void print_number(int n)
 {
-	int i = 1;
-	int j = 1;
+	int divisor = 1;
 
 	if (n < 0)
 	{
@@ -18,15 +18,16 @@ void print_number(int n)
 		n = -n;
 	}
 
-	while (n / i >= 10)
+	while (n / divisor > 9)
 	{
-		i *= 10;
+		divisor *= 10;
 	}
 
-	while (i > 0)
+	while (divisor != 0)
 	{
-		_putchar((n / i) % 10 + '0');
-		i /= 10;
+		int digit = n / divisor;
+		_putchar(digit + '0');
+		n %= divisor;
+		divisor /= 10;
 	}
 }
-
