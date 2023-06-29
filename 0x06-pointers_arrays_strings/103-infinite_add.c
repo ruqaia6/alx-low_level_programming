@@ -23,7 +23,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 		if (k >= size_r - 1)
 		{
-			return 0;
+			return (0);
 		}
 
 		r[k++] = sum % 10 + '0';
@@ -47,10 +47,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	if (k >= size_r)
 	{
-		return 0;
+		return (0);
 	}
 
 	r[k] = '\0';
 
-	return r;
+	return (r);
 }
